@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+    font-family: monospace;
+    color: white;
+}
+a {
+    text-decoration:none;
+    color: #fff;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a:hover{
+    /* text-decoration: underline; - was an option*/
+    opacity: 70%;
+}
+.title{
+    font-size: 36pt;
+}
+.subtitle{
+    font-size: 28pt;
+    height: 5px;
+    font-weight: bold;
+}
+p{
+    font-size: 20pt;
+}
+#me_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+}
+#me{
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%; 
+    filter: grayscale(100%);
+    transition: all 0.3s ease 0s;
+}
+#me:hover{
+    filter: grayscale(10%);
+}
+h1{
+    text-align: center;
+    font-weight: normal;
+}
+b{
+    color: rgba(255, 255, 255, 0.5);
+}
+.arrow {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: arrow_animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+@keyframes arrow_animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+  }
+.txt-rotate{
+    transition: all 0.3s ease 0s;
+}
+.txt-rotate:hover{
+    color: lightblue;
+}
+#read_more{
+    text-align: center;
+    margin-top: 30px;
+}
+header{
+    padding: 20vh 20vw;
+}
+#about{
+    height: fit-content;
+    background-color: #333;
+    padding: 20vh 20vw;
+} 
+.section-content{
+    width: 60vw;
+    height: fit-content;
+    padding: 10px;
+    margin-top: 20px;
+}
+.about-content{
+    background-color: #282828;
+}
+#projects-content{
+    background-color: #0a0a0a;
+}
+#projects-section{
+    padding: 20vh 20vw;
+    height: fit-content;
+}
+.projects{
+    margin: 3vh 3vw;
+}
+.projects p{
+    margin-bottom: 5vh;
+}
+.project-title{
+    font-size: 22pt;
+    color: gray;
+}
+.project-links{
+    font-size: 14pt;
+}
+.project-links a{
+    text-decoration: underline;
+    color: gray;
+}
+hr{
+    height: 3px;
+    background-color: rgb(100, 100, 100);
+    border: none;
+    margin-bottom: 1.5vh;
+    border-radius: 50%;
+}
